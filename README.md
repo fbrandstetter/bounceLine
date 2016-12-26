@@ -1,9 +1,4 @@
-## bounceLine
-A script that resets an interface if Internet goes down.
-### Why?
-After I've got a new modem for my internet connection, things started going weird sometimes and the connection does not work anymore after some time. A solution for that was, writing a script that automatically resets the interface in order to request a new DHCP lease.
-### How?
-Just run the cron.sh every minute and the clear.sh at the time you want to clear the logfile.
-### Example crontab
-    * * * * * /opt/bounceLine/cron.sh
-    00 00 * * * /opt/bounceLine/clear.sh
+# bounceLine
+
+## About
+bounceLine is a simple and short set of tools which resets a network interface if the Internet goes down. This is helpful if you need to request a new DHCP lease every few hours and your device does not detect it. If you want to learn more about "How to install bounceLine" - take a look at the `INSTALL.md` file.
